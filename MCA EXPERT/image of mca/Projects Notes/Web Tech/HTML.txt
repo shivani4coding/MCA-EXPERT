@@ -1,0 +1,217 @@
+				HTML
+HTML stands for Hyper Text Markup Language, which is the most widely used language on Web to develop web pages.HTML was created by Berners-Lee in late 1991 but "HTML 2.0" was the first standard HTML specification which was published in 1995. HTML 4.01 was a major version of HTML and it was published in late 1999.
+Hypertext refers to the way in which Web pages (HTML documents) are linked together. Thus the link available on a webpage are called Hypertext.
+
+	Example of Html-
+  <!DOCTYPE html>
+<html>
+   <body>
+      <h1>Hello World!</h1>
+   </body>
+</html>
+
+			HTML Tags
+
+As told earlier, HTML is a markup language and makes use of various tags to format the content. These tags are enclosed within angle braces <Tag Name>. Except few tags, most of the tags have their corresponding closing tags. For example <html> has its closing tag </html> and <body> tag has its closing tag </body> tag etc.
+
+
+		Heading Tags
+
+Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>.
+
+	Example of Heading Tags-
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Heading Example</title>
+</head>
+<body>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+</body>
+</html>
+
+
+		Paragraph Tag
+The <p> tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening <p> and a closing </p>.
+
+
+		Bold Text
+
+Anything that appears within <b>...</b> element, is displayed in bold as shown below:
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bold Text Example</title>
+</head>
+<body>
+<p>The following word uses a <b>bold</b> typeface.</p>
+</body>
+</html>
+
+
+		Italic Text
+
+Anything that appears within <i>...</i> element is displayed in italicized as shown below:
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<title>Italic Text Example</title>
+</head>
+<body>
+<p>The following word uses a <i>italicized</i> typeface.</p>
+</body>
+</html>
+
+		Underlined Text
+
+Anything that appears within <u>...</u> element, is displayed with underline as shown below:
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<title>Underlined Text Example</title>
+</head>
+<body>
+<p>The following word uses a <u>underlined</u> typeface.</p>
+</body>
+</html>
+
+
+		HTML Images
+
+	Insert Image
+
+You can insert any image in your web page by using <img> tag. Following is the simple syntax to use this tag.
+
+<img src="Image URL" ... attributes-list/>
+
+
+  Example of Image-
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Using Image in Webpage</title>
+</head>
+<body>
+<p>Simple Image Insert</p>
+<img src="/html/images/test.png" alt="Test Image" />
+</body>
+</html>
+
+
+		HTML Tables
+
+The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.The HTML tables are created using the <table> tag in which the <tr> tag is used to create table rows and <td> tag is used to create data cells.
+
+   Example of table-
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Tables</title>
+</head>
+<body>
+<table border="1">
+<tr>
+<td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+</tr>
+<tr>
+<td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+</tr>
+</table>
+</body>
+</html>
+
+		
+		
+
+		Tables Backgrounds
+
+You can set table background using one of the following two ways:
+1.bgcolor attribute - You can set background color for whole table or just for one cell.
+
+2.background attribute - You can set background image for whole table or just for one cell.
+
+
+Example of table background-
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Table Background</title>
+</head>
+<body>
+<table border="1" bordercolor="green" bgcolor="yellow">
+<tr>
+<th>Column 1</th>
+<th>Column 2</th>
+<th>Column 3</th>
+</tr>
+<tr><td rowspan="2">Row 1 Cell 1</td><td>Row 1 Cell 2</td><td>Row 1 Cell 3</td></tr>
+<tr><td>Row 2 Cell 2</td><td>Row 2 Cell 3</td></tr>
+<tr><td colspan="3">Row 3 Cell 1</td></tr>
+</table>
+</body>
+</html>
+
+
+
+			HTML Lists
+
+
+HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. Lists may contain:
+
+1.<ul> - An unordered list. This will list items using plain bullets.
+2.<ol> - An ordered list. This will use different schemes of numbers to list your items.
+3.<dl> - A definition list. This arranges your items in the same way as they are arranged in a dictionary.
+
+
+			HTML Colors
+
+Colors are very important to give a good look and feel to your website. You can specify colors on page level using <body> tag or you can set colors for individual tags using bgcolor attribute.The <body> tag has following attributes which can be used to set different colors:
+
+1.bgcolor - sets a color for the background of the page.
+
+2.text - sets a color for the body text.
+
+3.alink - sets a color for active links or selected links.
+
+4.link - sets a color for linked text.
+
+5.vlink - sets a color for visited links - that is, for linked text that you have already clicked on.
+
+
+			HTML Marquees
+
+An HTML marquee is a scrolling piece of text displayed either horizontally across or vertically down your webpage depending on the settings. This is created by using HTML <marquees> tag.
+
+		Syntax of marquee-
+
+<marquee attribute_name="attribute_value"....more attributes>One or more lines or text message or image
+</marquee>
+
+		Examples of marquee-
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML marquee Tag</title>
+</head>
+<body>
+<marquee>This is basic example of marquee</marquee>
+</body>
+</html>
+

@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#topdiv img{
+    padding-left: 40px;
+    padding-top: 20px;
+    float: left;
+}
+#topdiv h1{
+    height: 120px;
+    width: 550px;
+   /* border: 1px solid black;*/
+}
+#topdiv{
+    font-size: 30px;
+    padding-left: 40px;
+    padding-top: 40px;
+    height: 200px;
+    color: yellow;
+    background-color: green;
+    /*text-align: center;*/
+}
+#topleft{
+    float: right;
+    height: 120px;
+    width: 500px;
+    /*background-color: red;*/
+}
+#wrapper1{
+    height: 30px;
+    background-color: yellow;
+    
+}
+#email{
+    float: left;
+    color: green;
+    padding-left: 30px;
+    padding-top: 20px;
+    /*border: 1px solid black;*/
+    
+}
+#phn{
+    float: right;
+    color: green;
+    padding-right: 30px;
+    padding-top: 20px;
+    /*border: 1px solid black;*/
+}
+#text_img{
+    
+    padding-top: 30px;
+    margin: auto;
+    width: 150px;
+    cursor: pointer;
+}
+#div_txt{
+    height: 200px;
+    width: 400px;
+    float: right;
+    margin: 10px;
+    text-align: center;
+   /* background-color: brown;*/
+}
+h1{
+   /* padding-top: 10px;
+    text-align: center;*/
+}
+/*h1 p{
+    padding-left: 10px;
+    background-color: black;
+}*/
+
+/*Navigation Bar*/
+
+ul{
+    
+    color: green;
+}
+ul li{
+    text-align: center;
+    font-family: fantasy;
+    display: inline-block;
+    width: 200px;
+    line-height:31px;
+}
+ul li a:hover{
+  
+    background-color: red;
+    color: yellow;
+}
+ul li a{
+    
+    color: green;
+    text-decoration: none;
+    display: block;
+}
+#bottomdiv{
+    float: left;
+    height: 200px;
+    width: 1260px;
+    background-color: green;
+}
+#bottomdiv th{
+    padding-right: 350px;
+    
+    padding-top: 20px;
+}
+#allsub{
+   height: 100px;
+   width: 1260px;
+   /* background-color: paleturquoise;*/
+    float: left;
+    
+}
+
+#allsub div{
+    text-align: center;
+    padding-top: 10;
+    height: 50px;
+    width: 50px;
+    background-color: darkblue;
+}
+
+
+
+

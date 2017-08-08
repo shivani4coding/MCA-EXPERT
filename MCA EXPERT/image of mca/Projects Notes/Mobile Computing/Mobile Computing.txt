@@ -1,0 +1,60 @@
+			MOBILE COMPUTING
+A cellular network or mobile network is a wireless network distributed over land areas called cells, each served by at least one fixed-location transceiver, known as a cell site or base station. In a cellular network, each cell uses a different set of frequencies from neighboring cells, to avoid interference and provide guaranteed bandwidth within each cell.
+
+
+Frequency Reuse
+
+Each cellular base station is allocated a group of radio channels within a small geographic area called a cell.
+Neighboring cells are assigned different channel groups.
+By limiting the coverage area to within the boundary of the cell, the channel groups may be reused to cover different cells.
+Keep interference levels within tolerable limits.
+
+
+Frequency reuse or frequency planning
+
+ Consider a cellular system which has a total of S duplex channels.
+Each cell is allocated a group of k channels, .
+The S channels are divided among N
+The total number of available radio channels
+The N cells which use the complete set of channels is called cluster.
+The cluster can be repeated M times within the system. The total number of channels, C, is used as a measure of capacity
+The capacity is directly proportional to the number of replication M.
+The cluster size, N, is typically equal to 4, 7, or 12.
+Small N is desirable to maximize capacity.
+The frequency reuse factor is given by
+Hexagonal geometry has
+exactly six equidistance neighbors
+the lines joining the centers of any cell and each of its neighbors are separated by multiples of 60 degrees.
+Only certain cluster sizes and cell layout are possible.
+The number of cells per cluster, N, can only have values which satisfy
+Co-channel neighbors of a particular cell, ex, i=3 and j=2.
+
+
+Channel Assignment Strategies
+
+Frequency reuse scheme
+increases capacity
+minimize interference
+Channel assignment strategy
+fixed channel assignment
+dynamic channel assignment
+Fixed channel assignment
+each cell is allocated a predetermined set of voice channel
+any new call attempt can only be served by the unused channels
+the call will be blocked if all channels in that cell are occupied
+Dynamic channel assignment
+channels are not allocated to cells permanently.
+allocate channels based on request.
+reduce the likelihood of blocking, increase capacity.
+
+Cell Splitting
+
+Split congested cell into smaller cells.
+Preserve frequency reuse plan.
+Reduce transmission power.
+
+Mobile communication
+
+The mobile communication in this case, refers to the infrastructure put in place to ensure that seamless and reliable communication goes on. These would include devices such as protocols, services, bandwidth, and portals necessary to facilitate and support the stated services. The data format is also defined at this stage. This ensures that there is no collision with other existing systems which offer the same service.
+
+

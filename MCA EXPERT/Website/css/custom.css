@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container1{
+   background-color:darkblue;
+    color: white;
+    width: 100%;
+}
+.wrapper1{
+    width: 100%;
+    background-color: midnightblue;
+    margin: auto;
+}
+.wrapper2{
+    background-color:mediumblue;
+}
+.wrapper3{
+    background-color: midnightblue;
+}
+
+ul{
+    
+    color: white;
+}
+ul li{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    line-height:35px;
+}
+ul li a:hover{
+    background-color: blueviolet;
+    color: black;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+#top_left{
+    display: inline;
+   padding-left: 30px;
+    
+}
+#top_right{
+    float: right;
+    padding-right: 30px;
+}
+#top_div{
+    height: 40px;
+    line-height: 40px;
+}
+
+.wimg_left{
+    padding-left: 80px;
+    padding-top: 10px;
+    display: inline-block;
+    
+}
+.wimg_right{
+    float: right;
+    padding-top: 50px;
+    padding-right: 200px;
+}
+.btn{
+    background-color: darkblue;
+    color: white;
+    border-radius: 8px;
+    width: 80px;
+    padding: 7px;
+}
+.txt{
+    height: 30px;
+    width: 200px;
+   border-radius: 8px;
+}
+#clear{
+    clear: both;
+}
+#slider_img img{
+    padding-top: 20px;
+    width: 800px;
+    padding-left: 250px;
+}
+#text_img{
+    
+    padding-top: 30px;
+    margin: auto;
+    width: 150px;
+    cursor: pointer;
+}
+h1{
+    padding-top: 10px;
+    text-align: center;
+}
+h1 p{
+    padding-left: 10px;
+    background-color: rebeccapurple;
+}
+#div_txt{
+    height: 200px;
+    width: 400px;
+    float: right;
+    margin: 10px;
+    text-align: center;
+    background-color: brown;
+}
+
+.slider_div{
+    background-color: darkblue;
+}
+.outerbox{
+    width: 700px;
+    overflow: hidden;
+}
+.sliderbox{
+    padding-left: 800px;
+    position: relative;
+    width: 2079px;
+    animation-name: shinu;
+    animation-duration: 28s;
+    animation-iteration-count: infinite;
+}
+@keyframes shinu{
+    0%{
+        left: 0px;
+    }
+    18%{
+        left: 0px;
+    }
+    32%{
+        left: -297px;
+    }
+    50%{
+        left: -297px;
+    }
+    68%{
+        left: -594px;
+    }
+    86%{
+        left: -594px;
+    }
+    100{
+        left: -2079px;
+    }
+}
+
+
+
+

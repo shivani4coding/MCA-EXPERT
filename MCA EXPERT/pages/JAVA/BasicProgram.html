@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.basic.com</title>
+    <link rel="stylesheet" href="../../css/customer.css">
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="../../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    
+</head>
+<body class="container">
+     <h1>1.Program to Print Hello Java </h1>
+
+class Test <br>
+{ <br>
+	public static void main(String a[]) <br>
+	{ <br>
+		System.out.println("Hello Java..."); <br>
+	} <br>
+} <br>
+Output <br>
+Hello Java <br>
+
+<h1> 2.Program to Print Numbers 1 to 10 </h1>
+
+class Test <br>
+{ <br>
+	public static void main(String a[]) <br>
+	{ <br>
+		for( int i=0;i<10;i++) <br>
+		{ <br>
+			System.out.print(" "+i); <br>
+		} <br>
+	} <br>
+} <br>
+Output <br>
+0 1 2 3 4 5 6 7 8 9 <br>
+
+<h1>3. Program to Add Two Numbers </h1>
+
+
+class Add <br>
+{ <br>
+	public static void main(String a[]) <br>
+	{ <br>
+		int x=10; <br>
+		int y=20; <br>
+		int sum; <br>
+		sum=x+y; <br>
+		System.out.println("sum="+sum); <br>
+	} <br>
+} <br>
+Output <br> 
+sum=30 <br>
+
+<h1> 4.Program to Add and Print Numbers through Loop </h1>
+
+
+class Add  <br>
+{ <br>
+	public static void main(String a[]) <br>
+	{ <br>
+		int n=10; <br>
+		int sum=0; <br>
+		for(int i=0;i<=n;i++) <br>
+		{ <br>
+			sum=sum+i; <br>
+			System.out.println("sum="+sum); <br>
+		} <br>
+	} <br>
+}  <br>
+Output <br>
+sum=0 <br>
+sum=1 <br>
+sum=3 <br>
+sum=6 <br>
+sum=10 <br>
+sum=15 <br>
+sum=21 <br>
+sum=28 <br>
+sum=36 <br>
+sum=45 <br>
+sum=55 <br>
+
+ <h1>5.Program to swap two values</h1> 
+
+
+class Swap  <br>
+{ <br>
+	public static void main(String args[]) <br>
+	{ <br>
+		int a=10; <br>
+		int b=20; <br> 
+		int c=0; <br>
+		System.out.println("values before swap="+a+" "+b); <br>
+		c=a; <br>
+		a=b; <br> 
+		b=c; <br>
+		System.out.println("values after swap="+a+" "+b); <br>
+	} <br>
+} <br>
+Output <br>
+values before swap=10 20 <br>
+values after swap=20 10 <br>
+
+<h1>6. Program to Swap two numbers without using third variable </h1>
+
+class Swap <br>
+{ <br>
+	public static void main(String args[]) <br>
+	{ <br>
+		int a=10; <br>
+		int b=20; <br>
+		System.out.println("values before swap="+a+" "+b); <br>
+		a=a+b; <br>
+		b=a-b; <br>
+		a=a-b; <br>
+		System.out.println("values after swap="+a+" "+b); <br>
+	} <br>
+} <br>
+Output <br>
+values before swap=10 20 <br>
+values after swap=20 10 <br>
+
+<xh1>6. Program to Swap two numbers without using third variable </xh1>
+
+class Prime <br>
+{ <br>
+	public static void main(String ad[]) <br>
+	{ <br>
+		int i,j,x,y=0; <br>
+		for(i=1;i<100;i++) <br>
+		{ <br>
+			x=0; <br>
+			for(j=2;j<=i;j++) <br>
+			{ <br>
+				if(i%j==0) <br>
+				x=x+1; <br>
+			} <br>
+			if(x==1) <br>
+			{ <br>
+				System.out.println("Prime Numbers Are " +i); <br>
+				y=y+1; <br>
+			} <br>
+		} <br>
+		System.out.println("The no. of prime no. are = "+y); <br>
+	} <br>
+} <br>
+Output <br>
+Prime Numbers Are 2 <br>
+Prime Numbers Are 3 <br>
+Prime Numbers Are 5 <br>
+Prime Numbers Are 7 <br>
+Prime Numbers Are 11 <br>
+Prime Numbers Are 13 <br>
+Prime Numbers Are 17 <br>
+The no. of prime no. are = 25 <br>
+
+<h1>8. Program to print perimeter and area </h1>
+
+class Rectangle <br>
+{ <br>
+	public static void main(String a[]) <br>
+	{ <br>
+		int area; <br>
+		int peri; <br>
+		int length=10; <br>
+		int bre=5; <br>
+		peri=2*(length+bre); <br>
+		area=length*bre; <br>
+		System.out.println("area="+area); <br>
+		System.out.println("perimeter="+peri); <br>
+	} <br>
+} <br>
+Output <br>
+area=50 <br>
+perimeter=30 <br>
+
+ <h1>9.Program to print the Simple Interest </h1>
+
+
+class Simple <br>
+{ <br>
+	public static void main(String a[]) <br>
+	{ <br>
+		int principle=10000; <br>
+		int rate=5; <br>
+		int time=2; <br>
+		int cal; <br>
+		cal=(principle*rate*time)/100; <br>
+		System.out.println("simple interst is "+cal); <br>
+	} <br>
+} <br>
+Output <br>
+simple interst is 1000 <br>
+
+<h1>10. Program to print the HRA, DA, TA and Net Salary </h1>
+
+
+class NetSalary <br>
+{ <br>
+	public static void main(String args[]) <br>
+	{ <br>
+		int bsal=10000,Hra,DA,Ta,pf=1400,netsalary; <br>
+		Hra=(bsal*30)/100; <br>
+		DA=(bsal*20)/100; <br>
+		Ta=(bsal*10)/100; <br>
+		netsalary=((bsal+Hra+DA+Ta)-pf); <br>
+		System.out.println("HRA,DA,TA is="+Hra+" "+DA+" "+Ta); <br>
+		System.out.println("net salary is="+netsalary); <br>
+	} <br>
+} <br>
+Output <br>
+HRA, DA, TA is=3000 2000 1000 <br>
+net salary is=14600 <br>
+</body>
+</html>

@@ -1,0 +1,389 @@
+					DBMS
+		
+			
+		Database
+
+A database management system (DBMS) is a computer software application that interacts with the user, other applications, and the database itself to capture and analyze data. A general-purpose DBMS is designed to allow the definition, creation, querying, update, and administration of databases. Well-known DBMSs include MySQL, PostgreSQL, MongoDB, MariaDB, Microsoft SQL Server, Oracle, Sybase, SAP HANA, MemSQL and IBM DB2. A database is not generally portable across different DBMSs, but different DBMS can interoperate by using standards such as SQL and ODBC or JDBC to allow a single application to work with more than one DBMS.
+
+Existing DBMSs provide various functions that allow management of a database and its data which can be classified into four main functional groups:
+
+1.Data definition – Creation, modification and removal of definitions that define the organization of the data.
+2.Update – Insertion, modification, and deletion of the actual data.
+3.Retrieval – Providing information in a form directly usable or for further processing by other applications. The retrieved data may be made available in a form basically the same as it is stored in the database or in a new form obtained by altering or combining existing data from the database.
+4.Administration – Registering and monitoring users, enforcing data security, monitoring performance, maintaining data integrity, dealing with concurrency control, and recovering information that has been corrupted by some event such as an unexpected system failure.
+
+
+				Models
+
+A database model is a type of data model that determines the logical structure of a database and fundamentally determines in which manner data can be stored, organized, and manipulated. The most popular example of a database model is the relational model (or the SQL approximation of relational), which uses a table-based format.
+
+	Common logical data models for databases include:
+
+1.Navigational databases
+2.Hierarchical database model
+3.Network model
+4.Graph database
+5.Relational model
+6.Entity–relationship model
+7.Enhanced entity–relationship model
+8.Object model
+9.Document model
+10.Entity–attribute–value model
+11.Star schema
+
+
+			External, conceptual, and internal views
+
+A database management system provides three views of the database data:
+
+.The external level defines how each group of end-users sees the organization of data in the database. A single database can have any number of views at the external level.
+
+.The conceptual level unifies the various external views into a compatible global view.It provides the synthesis of all the external views. It is out of the scope of the various database end-users, and is rather of interest to database application developers and database administrators.
+
+.The internal level (or physical level) is the internal organization of data inside a DBMS. It is concerned with cost, performance, scalability and other operational matters. It deals with storage layout of the data, using storage structures such as indexes to enhance performance. Occasionally it stores data of individual views (materialized views), computed from generic data, if performance justification exists for such redundancy.
+
+
+				Languages
+
+
+Database languages are special-purpose languages, which do one or more of the following:
+
+1.Data definition language – defines data types such as creating, altering, or dropping and the relationships among them.
+
+2.Data manipulation language – performs tasks such as inserting, updating, or deleting data occurrences.
+
+3.Query language – allows searching for information and computing derived information.
+
+
+				Database Architecture
+
+Database architecture is logically divided into two types.
+
+1.Logical two-tier Client / Server architecture
+2.Logical three-tier Client / Server architecture
+
+
+			1.Two-tier Client / Server Architecture
+
+Two-tier Client / Server architecture is used for User Interface program and Application Programs that runs on client side. An interface called ODBC(Open Database Connectivity) provides an API that allow client side program to call the dbms. Most DBMS vendors provide ODBC drivers. 
+
+
+			2.Three-tier Client / Server Architecture
+
+Three-tier Client / Server database architecture is commonly used architecture for web applications. Intermediate layer called Application server or Web Server stores the web connectivty software and the business logic(constraints) part of application used to access the right amount of data from the database server. This layer acts like medium for sending partially processed data between the database server and the client.
+
+
+
+
+				RDBMS Concepts
+
+A Relational Database management System(RDBMS) is a database management system based on relational model introduced by E.F Codd. In relational model, data is represented in terms of tuples(rows).RDBMS is used to manage Relational database. Relational database is a collection of organized set of tables from which data can be accessed easily. Relational Database is most commonly used database. It consists of number of tables and each table has its own primary key.
+
+
+
+				Table
+
+In Relational database, a table is a collection of data elements organised in terms of rows and columns. A table is also considered as convenient representation of relations. But a table can have duplicate tuples while a true relation cannot have duplicate tuples. Table is the most simplest form of data storage.
+
+
+			example of Employee table.
+
+ID	Name	Age	Salary
+1	Adam	34	13000
+2	Alex	28	15000
+3	Stuart	20	18000
+4	Ross	42	19020
+
+
+
+
+				Record 
+
+A single entry in a table is called a Record or Row. A Record in a table represents set of related data. For example, the above Employee table has 4 records.
+
+
+				Field 
+
+A table consists of several records(row), each record can be broken into several smaller entities known as Fields. The above Employee table consist of four fields, ID, Name, Age and Salary.
+
+				 Column 
+
+In Relational table, a column is a set of value of a particular type. The term Attribute is also used to represent a column. For example, in Employee table, Name is a column that represent names of employee.
+
+1.Name
+2.Adam
+3.Alex
+4.Stuart
+5.Ross
+
+
+
+				Database Keys
+
+Keys are very important part of Relational database. They are used to establish and identify relation between tables. They also ensure that each record within a table can be uniquely identified by combination of one or more fields within a table.
+
+				1.Super Key
+
+Super Key is defined as a set of attributes within a table that uniquely identifies each record within a table. Super Key is a superset of Candidate key.
+
+				2.Candidate Key
+
+Candidate keys are defined as the set of fields from which primary key can be selected. It is an attribute or set of attribute that can act as a primary key for a table to uniquely identify each record in that table.
+
+				3.Primary Key
+
+Primary key is a candidate key that is most appropriate to become main key of the table. It is a key that uniquely identify each record in a table.
+
+
+
+				4.Composite Key
+
+Key that consist of two or more attributes that uniquely identify an entity occurance is called Composite key. But any attribute that makes up the Composite key is not a simple key in its own.
+
+
+
+				5.Secondary or Alternative key
+
+The candidate key which are not selected for primary key are known as secondary keys or alternative keys
+
+				6.Non-key Attribute
+
+Non-key attributes are attributes other than candidate key attributes in a table.
+
+			 	7.Non-prime Attribute
+
+Non-prime Attributes are attributes other than Primary attribute.
+
+
+
+
+				Normalization of Database
+
+Database Normalisation is a technique of organizing the data in the database. Normalization is a systematic approach of decomposing tables to eliminate data redundancy and undesirable characteristics like Insertion, Update and Deletion Anamolies. It is a multi-step process that puts data into tabular form by removing duplicated data from the relation tables.
+
+Normalization is used for mainly two purpose,
+
+.Eliminating reduntant(useless) data.
+.Ensuring data dependencies make sense i.e data is logically stored.
+.Problem Without Normalization
+
+Without Normalization, it becomes difficult to handle and update the database, without facing data loss. Insertion, Updation and Deletion Anamolies are very frequent if Database is not Normalized. 
+
+		 example of Student table.
+
+S_id	S_Name	S_Address	Subject_opted
+401	Adam	Noida	Bio
+402	Alex	Panipat	Maths
+403	Stuart	Jammu	Maths
+404	Adam	Noida	Physics
+Updation Anamoly : To update address of a student who occurs twice or more than twice in a table, we will have to update S_Address column in all the rows, else data will become inconsistent.
+Insertion Anamoly : Suppose for a new admission, we have a Student id(S_id), name and address of a student but if student has not opted for any subjects yet then we have to insert NULL there, leading to Insertion Anamoly.
+Deletion Anamoly : If (S_id) 401 has only one subject and temporarily he drops it, when we delete that row, entire student record will be deleted along with it.
+Normalization Rule
+
+Normalization rule are divided into following normal form.
+
+1.First Normal Form
+2.Second Normal Form
+3.Third Normal Form
+4.BCNF
+
+		1.First Normal Form (1NF)
+
+As per First Normal Form, no two Rows of data must contain repeating group of information i.e each set of column must have a unique value, such that multiple columns cannot be used to fetch the same row. Each table should be organized into rows, and each row should have a primary key that distinguishes it as unique.
+
+The Primary key is usually a single column, but sometimes more than one column can be combined to create a single primary key. For example consider a table which is not in First normal form
+
+Student Table :
+
+Student	Age	Subject
+Adam	15	Biology, Maths
+Alex	14	Maths
+Stuart	17	Maths
+In First Normal Form, any row must not have a column in which more than one value is saved, like separated with commas. Rather than that, we must separate such data into multiple rows.
+
+Student Table following 1NF will be :
+
+Student	Age	Subject
+Adam	15	Biology
+Adam	15	Maths
+Alex	14	Maths
+Stuart	17	Maths
+Using the First Normal Form, data redundancy increases, as there will be many columns with same data in multiple rows but each row as a whole will be unique.
+
+			2.Second Normal Form (2NF)
+
+As per the Second Normal Form there must not be any partial dependency of any column on primary key. It means that for a table that has concatenated primary key, each column in the table that is not part of the primary key must depend upon the entire concatenated key for its existence. If any column depends only on one part of the concatenated key, then the table fails Second normal form.
+
+In example of First Normal Form there are two rows for Adam, to include multiple subjects that he has opted for. While this is searchable, and follows First normal form, it is an inefficient use of space. Also in the above Table in First Normal Form, while the candidate key is {Student, Subject}, Age of Student only depends on Student column, which is incorrect as per Second Normal Form. To achieve second normal form, it would be helpful to split out the subjects into an independent table, and match them up using the student names as foreign keys.
+
+New Student Table following 2NF will be :
+
+Student	Age
+Adam	15
+Alex	14
+Stuart	17
+In Student Table the candidate key will be Student column, because all other column i.e Age is dependent on it.
+
+New Subject Table introduced for 2NF will be :
+
+Student	Subject
+Adam	Biology
+Adam	Maths
+Alex	Maths
+Stuart	Maths
+In Subject Table the candidate key will be {Student, Subject} column. Now, both the above tables qualifies for Second Normal Form and will never suffer from Update Anomalies. Although there are a few complex cases in which table in Second Normal Form suffers Update Anomalies, and to handle those scenarios Third Normal Form is there.
+
+			3.Third Normal Form (3NF)
+
+Third Normal form applies that every non-prime attribute of table must be dependent on primary key, or we can say that, there should not be the case that a non-prime attribute is determined by another non-prime attribute. So this transitive functional dependency should be removed from the table and also the table must be in Second Normal form. For example, consider a table with following fields.
+
+Student_Detail Table :
+
+Student_id	Student_name	DOB	Street	city	State	Zip
+In this table Student_id is Primary key, but street, city and state depends upon Zip. The dependency between zip and other fields is called transitive dependency. Hence to apply 3NF, we need to move the street, city and state to new table, with Zip as primary key.
+
+New Student_Detail Table :
+
+Student_id	Student_name	DOB	Zip
+Address Table :
+
+Zip	Street	city	state
+The advantage of removing transtive dependency is,
+
+Amount of data duplication is reduced.
+Data integrity achieved.
+
+
+			4.Boyce and Codd Normal Form (BCNF)
+
+Boyce and Codd Normal Form is a higher version of the Third Normal form. This form deals with certain type of anamoly that is not handled by 3NF. A 3NF table which does not have multiple overlapping candidate keys is said to be in BCNF. For a table to be in BCNF, following conditions must be satisfied:
+
+1.R must be in 3rd Normal Form
+2.and, for each functional dependency ( X -> Y ), X should be a super Key.
+3.BCNF Normal Form
+
+
+
+				Generalization
+
+Generalization is a bottom-up approach in which two lower level entities combine to form a higher level entity. In generalization, the higher level entity can also combine with other lower level entity to make further higher level entity.
+
+
+
+				Specialization
+
+Specialization is opposite to Generalization. It is a top-down approach in which one higher level entity can be broken down into two lower level entity. In specialization, some higher level entities may not have lower-level entity sets at all.
+
+
+
+				Aggregration
+
+Aggregration is a process when relation between two entity is treated as a single entity. Here the relation between Center and Course, is acting as an Entity in relation with Visitor.
+
+
+
+
+				E-R Diagram
+ER-Diagram is a visual representation of data that describes how data is related to each other.
+
+	
+
+	Components of E-R Diagram
+
+The E-R diagram has three main components.
+
+1) Entity
+
+An Entity can be any object, place, person or class. In E-R Diagram, an entity is represented using rectangles. Consider an example of an Organisation. Employee, Manager, Department, Product and many more can be taken as entities from an Organisation.
+
+
+
+			Weak Entity
+
+Weak entity is an entity that depends on another entity. Weak entity doen't have key attribute of their own. Double rectangle represents weak entity.
+
+
+
+	2) Attribute
+
+An Attribute describes a property or characterstic of an entity. For example, Name, Age, Address etc can be attributes of a Student. An attribute is represented using eclipse.
+
+
+
+		Key Attribute
+
+Key attribute represents the main characterstic of an Entity. It is used to represent Primary key. Ellipse with underlying lines represent Key Attribute.
+
+
+
+		Composite Attribute
+
+An attribute can also have their own attributes. These attributes are known as Composite attribute.
+
+composite attribute example
+
+3) Relationship
+
+A Relationship describes relations between entities. Relationship is represented using diamonds.
+
+
+
+There are three types of relationship that exist between Entities.
+
+1.Binary Relationship
+2.Recursive Relationship
+3.Ternary Relationship
+4.Binary Relationship
+
+Binary Relationship means relation between two Entities. This is further divided into three types.
+
+1.One to One : This type of relationship is rarely seen in real world.
+
+2.One to Many : It reflects business rule that one entity is associated with many number of same entity. The example for this relation might sound a little weird, but this menas that one student can enroll to many courses, but one course will have one Student.
+one-to-many example
+
+The arrows in the diagram describes that one student can enroll for only one course.
+
+3.Many to One : It reflects business rule that many entities can be associated with just one entity. For example, Student enrolls for only one Course but a Course can have many Students.
+one-to-many example
+
+4.Many to Many :
+
+
+The above diagram represents that many students can enroll for more than one courses.
+
+ 1.Recursive Relationship
+
+When an Entity is related with itself it is known as Recursive Relationship.
+
+ 2.recursive relationship example
+
+ 3.Ternary Relationship
+
+Relationship of degree three is called Ternary relationship.
+
+
+
+			Create command
+create is a DDL command used to create a table or a database.
+
+			Creating a Database
+
+To create a database in RDBMS, create command is uses. Following is the Syntax,
+
+create database database-name;
+create database Test;
+
+
+Creating a Table
+
+create command is also used to create a table. We can specify names and datatypes of various columns along.Following is the Syntax,
+
+create table table-name
+{
+ column-name1 datatype1,
+ column-name2 datatype2,
+ column-name3 datatype3,
+ column-name4 datatype4
+};

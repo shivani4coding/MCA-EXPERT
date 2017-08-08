@@ -1,0 +1,144 @@
+					Advance Java
+
+
+		What is a Servlet?
+
+Servlet can be described in many ways, depending on the context.
+1.Servlet is a technology i.e. used to create web application.
+2.Servlet is an API that provides many interfaces and classes including documentations.
+3.Servlet is an interface that must be implemented for creating any servlet.
+4.Servlet is a class that extend the capabilities of the servers and respond to the incoming request. It can respond to any type of requests.
+5.Servlet is a web component that is deployed on the server to create dynamic web page.
+
+		CGI(Commmon Gateway Interface)
+
+CGI technology enables the web server to call an external program and pass HTTP request information to the external program to process the request. For each request, it starts a new process.
+
+		Disadvantages of CGI
+
+There are many problems in CGI technology:
+
+1.If number of clients increases, it takes more time for sending response.
+2.For each request, it starts a process and Web server is limited to start processes.
+3.It uses platform dependent language e.g. C, C++, perl.
+
+
+		Life Cycle of Servlet
+
+The web container maintains the life cycle of a servlet instance. Let's see the life cycle of the servlet:
+
+1.Servlet class is loaded.
+2.Servlet instance is created.
+3.init method is invoked.
+4.service method is invoked.
+5.destroy method is invoked.
+
+		Example of servlet
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+ 
+/**
+ * Servlet implementation class HelloWorld
+ */
+public class HelloWorld extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+ 
+	/**
+	 * Default constructor.
+	 */
+	public HelloWorld() {
+	}
+ 
+	/*
+	 * This method will handle all GET request.
+	 */
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+ 
+		System.out.println("Hello World");
+	}
+ 
+	/*
+	 * This method will handle all POST request
+	 */
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+ 
+	}
+ 
+}
+
+
+
+
+		JSP Tutorial
+
+JSP technology is used to create web application just like Servlet technology. It can be thought of as an extension to servlet because it provides more functionality than servlet such as expression language, jstl etc.
+A JSP page consists of HTML tags and JSP tags. The jsp pages are easier to maintain than servlet because we can separate designing and development. It provides some additional features such as Expression Language, Custom Tag etc.
+
+
+	Life cycle of a JSP Page-
+
+The JSP pages follows these phases:
+1.Translation of JSP Page
+2.Compilation of JSP Page
+3.Classloading (class file is loaded by the classloader)
+4.Instantiation (Object of the Generated Servlet is created).
+5.Initialization ( jspInit() method is invoked by the container).
+6.Reqeust processing ( _jspService() method is invoked by the container).
+7.Destroy ( jspDestroy() method is invoked by the container).
+
+	Example of JSP-
+
+<%  
+   Date x = new java.util.Date();
+   if (x.getHours() > 3 && x.getHours() < 12 ) {   
+%>
+         Good Morning        
+<%   } 
+
+      else if (x.getHours() > 12 && x.getHours ()< 18 )   {    %>
+         Good Afternoon
+<%   } 
+      else if (x.getHours()> 18 || x.getHours() <3)   {    %>
+         Good Evening
+<%   } %>
+
+				Struts
+
+
+Steps to create Struts 2 Application Example
+In this example, we are creating the struts 2 example without IDE. We can simply create the struts 2 application by following these simple steps:
+
+1.Create the directory structure
+2.Create input page (index.jsp)
+3.Provide the entry of Controller in (web.xml) file
+4.Create the action class (Product.java)
+5.Map the request with the action in (struts.xml) file and define the view components
+6.Create view components (welcome.jsp)
+7.load the jar files
+8.start server and deploy the project
+
+
+	Example of Struts-
+
+<?xml version="1.0" encoding="UTF-8"?>  
+<web-app>  
+  <filter>  
+  <filter-name>struts2</filter-name>  
+   <filter-class>  
+    org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter  
+   </filter-class>  
+  </filter>  
+  <filter-mapping>  
+   <filter-name>struts2</filter-name>  
+    <url-pattern>/*</url-pattern>  
+  </filter-mapping>  
+</web-app>  
+
+
+	
